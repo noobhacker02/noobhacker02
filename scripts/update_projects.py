@@ -6,7 +6,7 @@ from typing import List, Dict
 # GitHub Configuration
 GITHUB_USERNAME = "noobhacker02"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-TARGET_TAGS = ["rag", "lln", "showcase", "ai","shwcase"]
+TARGET_TAGS = ["rag", "lln", "shwcase", "ai"]
 
 def fetch_github_repos() -> List[Dict]:
     """Fetch all repositories for the user"""
@@ -33,54 +33,71 @@ def get_repo_image(repo_name: str) -> str:
     return f"https://opengraph.githubassets.com/1/{GITHUB_USERNAME}/{repo_name}"
 
 def generate_project_cards(repos: List[Dict]) -> str:
-    """Generate markdown for project cards"""
+    """Generate markdown for project cards in 2-column layout"""
     if not repos:
         print("⚠️ No projects to display")
         return "\n## 🚀 Featured Projects\n\n_No projects found with the specified tags yet. Tag your repos with `rag`, `lln`, `showcase`, or `ai` to display them here! 🚀_\n\n"
     
     cards_md = "\n## 🚀 Featured Projects\n\n"
     
-    for repo in repos:
-        name = repo.get("name", "Unknown")
-        desc = repo.get("description") or "No description available."
-        url = repo.get("html_url", "#")
-        topics = repo.get("topics", [])
-        stars = repo.get("stargazers_count", 0)
-        language = repo.get("language") or "N/A"
+    # Process repos in pairs for 2-column layout
+    for i in range(0, len(repos), 2):
+        cards_md += '<table><tr>\n'
         
-        # Get repository image
-        img_url = get_repo_image(name)
+        # First card
+        repo = repos[i]
+        cards_md += generate_single_card(repo)
         
-        # Format topics as badges (only target tags)
-        topic_badges = " ".join([
-            f"`{topic}`" 
-            for topic in topics 
-            if topic.lower() in [t.lower() for t in TARGET_TAGS]
-        ])
+        # Second card (if exists)
+        if i + 1 < len(repos):
+            repo = repos[i + 1]
+            cards_md += generate_single_card(repo)
+        else:
+            # Empty cell if odd number of projects
+            cards_md += '<td width="50%"></td>\n'
         
-        # Create card
-        card = f"""<div align="center">
+        cards_md += '</tr></table>\n\n'
+    
+    return cards_md
+
+def generate_single_card(repo: Dict) -> str:
+    """Generate a single project card"""
+    name = repo.get("name", "Unknown")
+    desc = repo.get("description") or "No description available."
+    url = repo.get("html_url", "#")
+    topics = repo.get("topics", [])
+    stars = repo.get("stargazers_count", 0)
+    language = repo.get("language") or "N/A"
+    
+    # Get repository image
+    img_url = get_repo_image(name)
+    
+    # Format topics as badges (only target tags)
+    topic_badges = " ".join([
+        f"`{topic}`" 
+        for topic in topics 
+        if topic.lower() in [t.lower() for t in TARGET_TAGS]
+    ])
+    
+    # Create card
+    return f"""<td width="50%" valign="top">
+<div align="center">
 
 ### 🔥 [{name}]({url})
 
-<img src="{img_url}" alt="{name}" width="600" style="border-radius: 10px; margin: 20px 0;">
+<img src="{img_url}" alt="{name}" width="100%" style="border-radius: 10px; margin: 10px 0;">
 
 {topic_badges}
 
-**{desc}**
+<p><strong>{desc}</strong></p>
 
-⭐ Stars: `{stars}` | 💻 Language: `{language}`
+<p>⭐ Stars: <code>{stars}</code> | 💻 Language: <code>{language}</code></p>
 
-[View Project →]({url})
-
----
+<a href="{url}">View Project →</a>
 
 </div>
-
+</td>
 """
-        cards_md += card
-    
-    return cards_md
 
 def update_readme(projects_md: str):
     """Update README.md with new projects section"""
