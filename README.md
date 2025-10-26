@@ -3,15 +3,15 @@
 
 <h1 align="center">👋 Heyoooo! I'm Talha Shaikh</h1>
 <h3 align="center">💻 Full-Stack Developer | AI Engineer | Multi-Agent Architect</h3>
-<p align="center"><i>“I’m gonna be the King of AI.” — probably me after too much coffee ☕</i></p>
-
+<p align="center"><i>"I'm gonna be the King of AI." — probably me after too much coffee ☕</i></p>
 
 ---
+
 <!--START_PROJECTS_LIST-->
 
 <!--END_PROJECTS_LIST-->
----
 
+---
 
 ## 🧠 Snapshot — TL;DR (Resume distilled)
 **Talha Shaikh** — `talhatalha1971@gmail.com` · [LinkedIn](https://linkedin.com/in/talha-shaikh-6334a2180) · [GitHub/noobhacker02](https://github.com/noobhacker02)
@@ -63,7 +63,7 @@ Versatile Full-Stack Developer & AI Engineer (2+ yrs). I treat AI as a force mul
 ---
 
 ## 🧠 Personality (brief & honest)
-I’m driven, slightly dramatic, and motivated by getting better — sometimes my ego pushes me hard (in a good way). I overthink features until they’re elegant, prefer API-first design, and I love turning messy client asks into solid products. I also enjoy anime and salty dev humor — low-key, dark, but still human.
+I'm driven, slightly dramatic, and motivated by getting better — sometimes my ego pushes me hard (in a good way). I overthink features until they're elegant, prefer API-first design, and I love turning messy client asks into solid products. I also enjoy anime and salty dev humor — low-key, dark, but still human.
 
 >  _I debug at 3 AM so future-me can keep sleeping — future-me has to appreciate the sacrifice._
 
@@ -73,6 +73,14 @@ I’m driven, slightly dramatic, and motivated by getting better — sometimes m
 - **Email:** talhatalha1971@gmail.com  
 - **LinkedIn:** https://linkedin.com/in/talha-shaikh-6334a2180  
 - **GitHub:** https://github.com/noobhacker02  
-- **Portfolio:** ([Portflio](https://drive.google.com/drive/folders/1tKLwQcoYzNua0suvkJ85lNatZpEsMT09?usp=sharing))
+- **Portfolio:** [Portfolio](https://drive.google.com/drive/folders/1tKLwQcoYzNua0suvkJ85lNatZpEsMT09?usp=sharing)
 
 ---
+
+<div align="center">
+  
+### 🤖 This README auto-updates daily with my latest projects
+  
+_Powered by GitHub Actions • Last updated: Auto-magic ✨_
+
+</div>
