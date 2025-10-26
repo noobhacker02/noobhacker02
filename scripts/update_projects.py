@@ -33,35 +33,186 @@ def get_repo_image(repo_name: str) -> str:
     return f"https://opengraph.githubassets.com/1/{GITHUB_USERNAME}/{repo_name}"
 
 def generate_project_cards(repos: List[Dict]) -> str:
-    """Generate markdown for project cards in 2-column layout"""
+    """Generate markdown for project cards in responsive 2-column layout with dark mode support"""
     if not repos:
         print("⚠️ No projects to display")
         return "\n## 🚀 Featured Projects\n\n_No projects found with the specified tags yet. Tag your repos with `rag`, `lln`, `showcase`, or `ai` to display them here! 🚀_\n\n"
     
-    cards_md = "\n## 🚀 Featured Projects\n\n"
+    # Add CSS for responsive grid and dark mode
+    cards_md = """
+## 🚀 Featured Projects
+
+<style>
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #1a1b27 0%, #1f2937 100%);
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.3);
+}
+
+.project-card img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  margin: 16px 0;
+  border: 1px solid #374151;
+}
+
+.project-title {
+  color: #f9fafb;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 16px 0 12px 0;
+  text-decoration: none;
+}
+
+.project-title:hover {
+  color: #60a5fa;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+  justify-content: center;
+}
+
+.project-tag {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: lowercase;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.project-desc {
+  color: #d1d5db;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+
+.project-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+  color: #9ca3af;
+  font-size: 0.9em;
+}
+
+.project-stats span {
+  background: #111827;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+}
+
+.project-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.project-link:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.6);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .project-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
+    border-color: #e5e7eb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
+  }
+  
+  .project-title {
+    color: #111827;
+  }
+  
+  .project-desc {
+    color: #4b5563;
+  }
+  
+  .project-stats {
+    color: #6b7280;
+  }
+  
+  .project-stats span {
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+  }
+  
+  .project-card img {
+    border-color: #e5e7eb;
+  }
+}
+</style>
+
+<div class="projects-grid">
+"""
     
-    # Process repos in pairs for 2-column layout
-    for i in range(0, len(repos), 2):
-        cards_md += '<table><tr>\n'
-        
-        # First card
-        repo = repos[i]
+    # Generate individual cards
+    for repo in repos:
         cards_md += generate_single_card(repo)
-        
-        # Second card (if exists)
-        if i + 1 < len(repos):
-            repo = repos[i + 1]
-            cards_md += generate_single_card(repo)
-        else:
-            # Empty cell if odd number of projects
-            cards_md += '<td width="50%"></td>\n'
-        
-        cards_md += '</tr></table>\n\n'
+    
+    cards_md += "\n</div>\n\n"
     
     return cards_md
 
 def generate_single_card(repo: Dict) -> str:
-    """Generate a single project card"""
+    """Generate a single project card with modern styling"""
     name = repo.get("name", "Unknown")
     desc = repo.get("description") or "No description available."
     url = repo.get("html_url", "#")
@@ -72,31 +223,42 @@ def generate_single_card(repo: Dict) -> str:
     # Get repository image
     img_url = get_repo_image(name)
     
-    # Format topics as badges (only target tags)
-    topic_badges = " ".join([
-        f"`{topic}`" 
+    # Format topics as badges (keep ALL topics including showcase)
+    topic_badges = "".join([
+        f'<span class="project-tag">{topic}</span>' 
         for topic in topics 
         if topic.lower() in [t.lower() for t in TARGET_TAGS]
     ])
     
+    # Add emoji based on language
+    lang_emoji = {
+        "Python": "🐍",
+        "JavaScript": "⚡",
+        "TypeScript": "💙",
+        "Java": "☕",
+        "Go": "🔷",
+        "Rust": "🦀",
+        "C++": "⚙️",
+        "HTML": "🌐",
+    }.get(language, "💻")
+    
     # Create card
-    return f"""<td width="50%" valign="top">
-<div align="center">
-
-### 🔥 [{name}]({url})
-
-<img src="{img_url}" alt="{name}" width="100%" style="border-radius: 10px; margin: 10px 0;">
-
-{topic_badges}
-
-<p><strong>{desc}</strong></p>
-
-<p>⭐ Stars: <code>{stars}</code> | 💻 Language: <code>{language}</code></p>
-
-<a href="{url}">View Project →</a>
-
+    return f"""
+<div class="project-card">
+  <div align="center">
+    <a href="{url}" class="project-title">🔥 {name}</a>
+    <img src="{img_url}" alt="{name} preview">
+    <div class="project-tags">
+      {topic_badges}
+    </div>
+    <p class="project-desc">{desc}</p>
+    <div class="project-stats">
+      <span>⭐ {stars}</span>
+      <span>{lang_emoji} {language}</span>
+    </div>
+    <a href="{url}" class="project-link">View Project →</a>
+  </div>
 </div>
-</td>
 """
 
 def update_readme(projects_md: str):
