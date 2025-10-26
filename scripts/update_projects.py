@@ -33,33 +33,21 @@ def get_repo_image(repo_name: str) -> str:
     return f"https://opengraph.githubassets.com/1/{GITHUB_USERNAME}/{repo_name}"
 
 def generate_project_cards(repos: List[Dict]) -> str:
-    """Generate markdown for project cards with proper mobile responsiveness using tables"""
+    """Generate markdown for project cards - simple stacked layout that works everywhere"""
     if not repos:
         print("⚠️ No projects to display")
         return "\n## 🚀 Featured Projects\n\n_No projects found with the specified tags yet. Tag your repos with `rag`, `lln`, `showcase`, or `ai` to display them here! 🚀_\n\n"
     
     cards_md = "\n## 🚀 Featured Projects\n\n"
     
-    # Process repos in pairs for 2-column layout
-    for i in range(0, len(repos), 2):
-        # Start table for each row (ensures mobile stacking)
-        cards_md += '<table width="100%"><tr>\n'
-        
-        # First card
-        repo = repos[i]
+    # Generate each card as a simple div - stacks naturally
+    for repo in repos:
         cards_md += generate_single_card(repo)
-        
-        # Second card (if exists)
-        if i + 1 < len(repos):
-            repo = repos[i + 1]
-            cards_md += generate_single_card(repo)
-        
-        cards_md += '</tr></table>\n\n'
     
     return cards_md
 
 def generate_single_card(repo: Dict) -> str:
-    """Generate a single project card optimized for both desktop and mobile"""
+    """Generate a single project card - simple and reliable"""
     name = repo.get("name", "Unknown")
     desc = repo.get("description") or "No description available."
     url = repo.get("html_url", "#")
@@ -91,39 +79,41 @@ def generate_single_card(repo: Dict) -> str:
         "CSS": "🎨",
     }.get(language, "💻")
     
-    # Create card with mobile-optimized inline styles
-    return f'''<td>
-<div style="padding: 20px; border: 2px solid #30363d; border-radius: 12px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); margin: 8px;">
-  <div align="center">
-    <h3 style="margin: 0 0 16px 0; font-size: 1.2em;">
-      <a href="{url}" style="color: #ff6b35; text-decoration: none;">
-        🔥 {name}
-      </a>
-    </h3>
-    
-    <a href="{url}">
-      <img src="{img_url}" alt="{name}" width="100%" style="border-radius: 8px; margin: 12px 0; border: 1px solid #30363d; max-width: 100%; height: auto; display: block;">
-    </a>
-    
-    <div style="margin: 12px 0;">
-      {topic_badges}
-    </div>
-    
-    <p style="color: #c9d1d9; font-size: 14px; line-height: 1.6; margin: 16px 0; text-align: left;">
-      {desc}
-    </p>
-    
-    <div style="margin: 16px 0;">
-      <img src="https://img.shields.io/badge/⭐_{stars}-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
-      <img src="https://img.shields.io/badge/{lang_emoji}_{language.replace(' ', '_')}-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
-    </div>
-    
-    <a href="{url}" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3); transition: transform 0.2s;">
-      View Project →
-    </a>
-  </div>
+    # Simple card with inline styles - works on all devices
+    return f'''
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
+  <a href="{url}" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 {name}
+  </a>
+</h3>
+
+<a href="{url}">
+  <img src="{img_url}" alt="{name}" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  {topic_badges}
 </div>
-</td>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  {desc}
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_{stars}-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/{lang_emoji}_{language.replace(' ', '_')}-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="{url}" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
 '''
 
 def update_readme(projects_md: str):
