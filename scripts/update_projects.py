@@ -6,7 +6,7 @@ from typing import List, Dict
 # GitHub Configuration
 GITHUB_USERNAME = "noobhacker02"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-TARGET_TAGS = ["rag", "lln", "showcase", "ai"]
+TARGET_TAGS = ["rag", "lln", "showcase", "ai","T"]
 
 def fetch_github_repos() -> List[Dict]:
     """Fetch all repositories for the user"""
