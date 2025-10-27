@@ -2,9 +2,8 @@ name: Update README with Projects
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC (adjust as needed)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -16,13 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: 🐍 Set up Python
@@ -38,25 +35,50 @@ jobs:
       - name: 🔄 Run Update Script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python scripts/update_projects.py
+        run: python scripts/update_projects.py
       
-      - name: 📝 Check for Changes
-        id: check_changes
-        run: |
-          git add README.md
-          if git diff --staged --quiet; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ No changes detected in README.md"
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "✅ Changes detected in README.md"
-          fi
-      
-      - name: 💾 Commit and Push Changes
-        if: steps.check_changes.outputs.has_changes == 'true'
+      - name: 💾 Commit and Push with Auto-merge
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "🤖 Auto-update: Featured projects ($(date +'%Y-%m-%d %H:%M'))"
-          git push
+          
+          # Check if there are changes
+          if git diff --quiet README.md; then
+            echo "ℹ️ No changes to commit"
+            exit 0
+          fi
+          
+          # Stage the changes
+          git add README.md
+          
+          # Commit the changes
+          git commit -m "🤖 Auto-update: Featured projects ($(date +'%Y-%m-%d %H:%M UTC'))"
+          
+          # Try to push up to 5 times with pull before each attempt
+          MAX_RETRIES=5
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "📤 Push attempt $i of $MAX_RETRIES..."
+            
+            if git push origin main; then
+              echo "✅ Successfully pushed!"
+              exit 0
+            fi
+            
+            echo "⚠️ Push failed, pulling latest changes..."
+            
+            # Pull with rebase to apply our changes on top
+            if git pull --rebase origin main; then
+              echo "✅ Rebase successful, retrying push..."
+            else
+              echo "⚠️ Rebase failed, using merge strategy..."
+              git rebase --abort
+              git pull --no-rebase origin main
+            fi
+            
+            # Wait a bit before retrying
+            sleep 2
+          done
+          
+          echo "❌ Failed to push after $MAX_RETRIES attempts"
+          echo "This usually means there are conflicting changes being pushed simultaneously"
+          exit 1
