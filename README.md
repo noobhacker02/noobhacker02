@@ -362,7 +362,7 @@
 **Talha Shaikh** — `talhatalha1971@gmail.com` · [LinkedIn](https://linkedin.com/in/talha-shaikh-6334a2180) · [GitHub/noobhacker02](https://github.com/noobhacker02)
 
 **Summary**  
-Versatile Full-Stack Developer & AI Engineer (2+ yrs). I treat AI as a force multiplier — not a crutch — to build scalable web apps and conversational systems that actually help people. Expert at architecting React + Python products, embedding chatbots (Mistral 7B, Gemini 2.5), and building multi-agent RAG workflows.
+Versatile Full-Stack Developer & AI Engineer. I treat AI as a force multiplier — not a crutch — to build scalable web apps and conversational systems that actually help people. Expert at architecting React + Python products, embedding chatbots (Mistral 7B, Gemini 2.5), and building multi-agent RAG workflows.
 
 ---
 
