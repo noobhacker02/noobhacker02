@@ -29,8 +29,21 @@ def has_target_tags(topics: List[str]) -> bool:
     return any(tag.lower() in topics_lower for tag in TARGET_TAGS)
 
 def get_repo_image(repo_name: str) -> str:
-    """Get repository social preview image"""
-    return f"https://github.com/{GITHUB_USERNAME}/{repo_name}/blob/main/{repo_name}.png"
+    """Get repository image - try custom image first, fallback to GitHub social preview"""
+    # Try custom image first
+    custom_image_url = f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{repo_name}/main/{repo_name}.png"
+    
+    try:
+        response = requests.head(custom_image_url, timeout=5)
+        if response.status_code == 200:
+            print(f"  ✅ Using custom image for {repo_name}")
+            return custom_image_url
+    except:
+        pass
+    
+    # Fallback to OpenGraph preview
+    print(f"  ℹ️ Using OpenGraph preview for {repo_name}")
+    return f"https://opengraph.githubassets.com/1/{GITHUB_USERNAME}/{repo_name}"
 
 def generate_project_cards(repos: List[Dict]) -> str:
     """Generate markdown for project cards - simple stacked layout that works everywhere"""
