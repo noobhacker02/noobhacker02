@@ -22,9 +22,14 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: main
+          fetch-depth: 0
+      
+      - name: 🔄 Pull Latest Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull origin main
       
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -45,8 +50,7 @@ jobs:
       - name: 📝 Check for Changes
         id: check_changes
         run: |
-          git add README.md
-          if git diff --staged --quiet; then
+          if git diff --quiet README.md; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "ℹ️ No changes detected in README.md"
           else
@@ -57,26 +61,18 @@ jobs:
       - name: 💾 Commit and Push Changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          # Pull again just in case
+          git pull origin main
           
-          # Pull latest changes with rebase
-          git pull --rebase origin main || echo "No remote changes to pull"
+          # Stage changes
+          git add README.md
           
-          # Commit changes
+          # Commit
           git commit -m "🤖 Auto-update: Featured projects ($(date +'%Y-%m-%d %H:%M'))"
           
-          # Push with retry logic
-          for i in {1..3}; do
-            if git push origin main; then
-              echo "✅ Successfully pushed changes"
-              exit 0
-            else
-              echo "⚠️ Push failed, attempt $i of 3"
-              git pull --rebase origin main
-              sleep 2
-            fi
-          done
-          
-          echo "❌ Failed to push after 3 attempts"
-          exit 1
+          # Push with force-with-lease (safe force push)
+          git push origin main --force-with-lease || {
+            echo "Push failed, pulling and retrying..."
+            git pull --rebase origin main
+            git push origin main
+          }
