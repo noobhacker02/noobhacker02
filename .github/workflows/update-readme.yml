@@ -2,25 +2,25 @@ name: Update README with Projects
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:   # Allows manual running
   push:
     branches:
       - main
     paths:
-      - 'scripts/update_projects.py'
+      - 'scripts/update_projects.py' # Runs if you change the script
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # Give the workflow permission to write to the repo
     
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }} # Use the default token
       
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -37,6 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_projects.py
       
+      # --- THIS IS THE CORRECTED STEP ---
       - name: 💾 Commit and Push with Auto-merge
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -59,6 +60,7 @@ jobs:
           for i in $(seq 1 $MAX_RETRIES); do
             echo "📤 Push attempt $i of $MAX_RETRIES..."
             
+            # Try to push
             if git push origin main; then
               echo "✅ Successfully pushed!"
               exit 0
@@ -71,6 +73,7 @@ jobs:
               echo "✅ Rebase successful, retrying push..."
             else
               echo "⚠️ Rebase failed, using merge strategy..."
+              # Abort the failed rebase and try a standard merge pull
               git rebase --abort
               git pull --no-rebase origin main
             fi
