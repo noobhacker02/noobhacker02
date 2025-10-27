@@ -15,6 +15,142 @@
 <div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
 
 <h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/Auto-Keyboard-Presser" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 Auto-Keyboard-Presser
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/Auto-Keyboard-Presser">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Auto-Keyboard-Presser" alt="Auto-Keyboard-Presser" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  Auto Keyboard Presser PRO is a powerful keyboard automation tool that allows you to record and replay keyboard sequences with ease. Whether you're looking to automate repetitive tasks or enhance your gaming experience, this tool has you covered with a modern UI, customizable playback options, and an emergency stop feature.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_4-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/🐍_Python-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/Auto-Keyboard-Presser" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 Audio-Cleaner-for-After-Effects
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Audio-Cleaner-for-After-Effects" alt="Audio-Cleaner-for-After-Effects" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  🎧 Audio Cleaner for Adobe After Effects A customizable silence remover script panel made for editors, voice-over artists, and anyone tired of trimming quiet parts manually.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_0-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/⚡_JavaScript-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/Car-Rental-React" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 Car-Rental-React
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/Car-Rental-React">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Car-Rental-React" alt="Car-Rental-React" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  Car Rental App - Deployment - A responsive web application built with React and Vite that displays a fleet of luxury cars. Users can dynamically filter and sort the collection to find their perfect vehicle. This project is optimized for a seamless deployment on Netlify.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_0-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/⚡_JavaScript-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/Car-Rental-React" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/ToolMart" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 ToolMart
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/ToolMart">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/ToolMart" alt="ToolMart" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  Toolmart React web - A modern, responsive e-commerce site built with React and Tailwind CSS. This Amazon-inspired platform for tools features a clean UI, dynamic product discovery, a full shopping cart, and smooth animations with Framer Motion for an engaging user experience.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_0-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/⚡_JavaScript-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/ToolMart" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
   <a href="https://github.com/noobhacker02/CustomTrainedCasualLLm_FastAPIChatBot" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
     🔥 CustomTrainedCasualLLm_FastAPIChatBot
   </a>
