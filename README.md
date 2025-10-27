@@ -11,7 +11,7 @@
 ## 🚀 Featured Projects
 
 <div align="center">
-<p><em>Last updated: October 27, 2025 at 05:54 UTC</em></p>
+<p><em>Last updated: October 27, 2025 at 05:59 UTC</em></p>
 </div>
 
 
@@ -25,7 +25,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/Auto-Keyboard-Presser">
-  <img src="https://github.com/noobhacker02/Auto-Keyboard-Presser/blob/main/Auto-Keyboard-Presser.png" alt="Auto-Keyboard-Presser" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Auto-Keyboard-Presser" alt="Auto-Keyboard-Presser" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -59,7 +59,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/ToolMart">
-  <img src="https://github.com/noobhacker02/ToolMart/blob/main/ToolMart.png" alt="ToolMart" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/noobhacker02/ToolMart/main/ToolMart.png" alt="ToolMart" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -93,7 +93,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/Car-Rental-React">
-  <img src="https://github.com/noobhacker02/Car-Rental-React/blob/main/Car-Rental-React.png" alt="Car-Rental-React" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/noobhacker02/Car-Rental-React/main/Car-Rental-React.png" alt="Car-Rental-React" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -127,7 +127,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/BrainNakama">
-  <img src="https://github.com/noobhacker02/BrainNakama/blob/main/BrainNakama.png" alt="BrainNakama" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/BrainNakama" alt="BrainNakama" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -161,7 +161,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects">
-  <img src="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects/blob/main/Audio-Cleaner-for-After-Effects.png" alt="Audio-Cleaner-for-After-Effects" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Audio-Cleaner-for-After-Effects" alt="Audio-Cleaner-for-After-Effects" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -195,7 +195,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/CustomTrainedCasualLLm_FastAPIChatBot">
-  <img src="https://github.com/noobhacker02/CustomTrainedCasualLLm_FastAPIChatBot/blob/main/CustomTrainedCasualLLm_FastAPIChatBot.png" alt="CustomTrainedCasualLLm_FastAPIChatBot" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/CustomTrainedCasualLLm_FastAPIChatBot" alt="CustomTrainedCasualLLm_FastAPIChatBot" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -229,7 +229,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/LangChain_Jup_NoteBook">
-  <img src="https://github.com/noobhacker02/LangChain_Jup_NoteBook/blob/main/LangChain_Jup_NoteBook.png" alt="LangChain_Jup_NoteBook" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/LangChain_Jup_NoteBook" alt="LangChain_Jup_NoteBook" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -263,7 +263,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent">
-  <img src="https://github.com/noobhacker02/Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent/blob/main/Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent.png" alt="Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent" alt="Enhanced-RAG-Multi-Index-Chroma-Conversational-Agent" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
@@ -297,7 +297,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/Low-Rank-Adaptation_Collab_Notebooks">
-  <img src="https://github.com/noobhacker02/Low-Rank-Adaptation_Collab_Notebooks/blob/main/Low-Rank-Adaptation_Collab_Notebooks.png" alt="Low-Rank-Adaptation_Collab_Notebooks" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Low-Rank-Adaptation_Collab_Notebooks" alt="Low-Rank-Adaptation_Collab_Notebooks" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
