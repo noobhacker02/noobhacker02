@@ -30,7 +30,7 @@ def has_target_tags(topics: List[str]) -> bool:
 
 def get_repo_image(repo_name: str) -> str:
     """Get repository social preview image"""
-    return f"https://opengraph.githubassets.com/1/{GITHUB_USERNAME}/{repo_name}"
+    return f"https://github.com/{GITHUB_USERNAME}/{repo_name}/blob/main/{repo_name}.png"
 
 def generate_project_cards(repos: List[Dict]) -> str:
     """Generate markdown for project cards - simple stacked layout that works everywhere"""
@@ -38,7 +38,14 @@ def generate_project_cards(repos: List[Dict]) -> str:
         print("⚠️ No projects to display")
         return "\n## 🚀 Featured Projects\n\n_No projects found with the specified tags yet. Tag your repos with `rag`, `lln`, `showcase`, or `ai` to display them here! 🚀_\n\n"
     
-    cards_md = "\n## 🚀 Featured Projects\n\n"
+    # Get current timestamp
+    from datetime import datetime
+    current_time = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
+    
+    cards_md = f"\n## 🚀 Featured Projects\n\n"
+    cards_md += f'<div align="center">\n'
+    cards_md += f'<p><em>Last updated: {current_time}</em></p>\n'
+    cards_md += f'</div>\n\n'
     
     # Generate each card as a simple div - stacks naturally
     for repo in repos:
