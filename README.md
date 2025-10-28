@@ -11,7 +11,7 @@
 ## 🚀 Featured Projects
 
 <div align="center">
-<p><em>Last updated: October 27, 2025 at 07:42 UTC</em></p>
+<p><em>Last updated: October 28, 2025 at 00:53 UTC</em></p>
 </div>
 
 
@@ -59,7 +59,7 @@
 </h3>
 
 <a href="https://github.com/noobhacker02/github-readme-automation">
-  <img src="https://opengraph.githubassets.com/1/noobhacker02/github-readme-automation" alt="github-readme-automation" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+  <img src="https://raw.githubusercontent.com/noobhacker02/github-readme-automation/main/github-readme-automation.png" alt="github-readme-automation" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
 </a>
 
 <div style="margin: 16px 0;">
