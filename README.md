@@ -11,7 +11,7 @@
 ## 🚀 Featured Projects
 
 <div align="center">
-<p><em>Last updated: December 03, 2025 at 00:58 UTC</em></p>
+<p><em>Last updated: December 04, 2025 at 00:58 UTC</em></p>
 </div>
 
 
@@ -53,6 +53,40 @@
 <div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
 
 <h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/N8N" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 N8N
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/N8N">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/N8N" alt="N8N" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/ai-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="ai">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  AI-Powered n8n Automation Hub – A collection of intelligent workflows to streamline business processes: smart invoice-to-sheet pipelines, AI-driven invoice approval, Google Maps lead finder, Gmail auto outreach & follow-ups, AI knowledge assistant for company files, AI email support with backup, and Retell voice AI for conversation insights.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_1-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/💻_N/A-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/N8N" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
   <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
     🔥 Audio-Cleaner-for-After-Effects
   </a>
@@ -76,40 +110,6 @@
 </div>
 
 <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
-  View Project →
-</a>
-
-</div>
-</div>
-
-
-<div align="center" style="margin: 20px 0;">
-<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
-
-<h3 style="margin: 0 0 16px 0;">
-  <a href="https://github.com/noobhacker02/N8N" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
-    🔥 N8N
-  </a>
-</h3>
-
-<a href="https://github.com/noobhacker02/N8N">
-  <img src="https://opengraph.githubassets.com/1/noobhacker02/N8N" alt="N8N" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
-</a>
-
-<div style="margin: 16px 0;">
-  <img src="https://img.shields.io/badge/ai-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="ai">
-</div>
-
-<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
-  AI-Powered n8n Automation Hub – A collection of intelligent workflows to streamline business processes: smart invoice-to-sheet pipelines, AI-driven invoice approval, Google Maps lead finder, Gmail auto outreach & follow-ups, AI knowledge assistant for company files, AI email support with backup, and Retell voice AI for conversation insights.
-</p>
-
-<div style="margin: 20px 0;">
-  <img src="https://img.shields.io/badge/⭐_0-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
-  <img src="https://img.shields.io/badge/💻_N/A-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
-</div>
-
-<a href="https://github.com/noobhacker02/N8N" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
   View Project →
 </a>
 
