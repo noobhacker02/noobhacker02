@@ -401,7 +401,8 @@ Versatile Full-Stack Developer & AI Engineer. I treat AI as a force multiplier �
 ---
 
 ## 💼 Experience (highlights)
-**Web Developer — Code Crafters Digital Solutions & Media Lab** (Mumbai / Belgium) — 02/2024 – 06/2025  
+**Ai Automation & Web Developer — Code Crafters Digital Solutions & Media Lab** (Mumbai / Belgium) — 02/2024 – 08/2025 
+- Architected 10+ end-to-end business automation workflows using n8n, orchestrating complex data flows between client operations, digital marketing, and lead management systems to eliminate manual data entry.
 - Delivered 10+ client websites (React, WordPress), improved page load & mobile UX (≈30% better engagement metrics).  
 - Led UI/UX design, SEO integrations, and client communication for cross-border projects.  
 - Introduced AI-assisted workflows: prompt engineering, image/video generation, and AI-assisted coding.
@@ -435,7 +436,7 @@ Versatile Full-Stack Developer & AI Engineer. I treat AI as a force multiplier �
 **Languages:** Python, JavaScript, SQL  
 **Frontend:** React.js, React Native, Tailwind, Framer Motion  
 **Backend:** Flask, FastAPI, Django, REST APIs, PostgreSQL/MySQL  
-**ML/AI:** LangChain, HuggingFace, LoRA/QLoRA, RAG, GGUF, Mistral 7B, Gemini 2.5, Llama variants  
+**ML/AI:** LangChain, n8n, HuggingFace, LoRA/QLoRA, RAG, GGUF, Mistral 7B, Gemini 2.5, Llama variants  
 **Infra:** Docker, CI/CD, GitHub Actions, AWS basics, NGINX  
 **Tools:** PyMuPDF, Tesseract, ChromaDB, Sentence Transformers, Botpress, Telegram API, SMTP/Email integrations
 
