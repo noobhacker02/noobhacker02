@@ -13,7 +13,7 @@ Rest AI Projects You can Find below
 ## 🚀 Featured Projects
 
 <div align="center">
-<p><em>Last updated: April 24, 2026 at 01:47 UTC</em></p>
+<p><em>Last updated: April 25, 2026 at 01:26 UTC</em></p>
 </div>
 
 
@@ -55,6 +55,40 @@ Rest AI Projects You can Find below
 <div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
 
 <h3 style="margin: 0 0 16px 0;">
+  <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
+    🔥 Audio-Cleaner-for-After-Effects
+  </a>
+</h3>
+
+<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects">
+  <img src="https://opengraph.githubassets.com/1/noobhacker02/Audio-Cleaner-for-After-Effects" alt="Audio-Cleaner-for-After-Effects" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
+</a>
+
+<div style="margin: 16px 0;">
+  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
+</div>
+
+<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
+  🎧 Audio Cleaner for Adobe After Effects A customizable silence remover script panel made for editors, voice-over artists, and anyone tired of trimming quiet parts manually.
+</p>
+
+<div style="margin: 20px 0;">
+  <img src="https://img.shields.io/badge/⭐_2-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
+  <img src="https://img.shields.io/badge/⚡_JavaScript-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
+</div>
+
+<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
+  View Project →
+</a>
+
+</div>
+</div>
+
+
+<div align="center" style="margin: 20px 0;">
+<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
+
+<h3 style="margin: 0 0 16px 0;">
   <a href="https://github.com/noobhacker02/N8N" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
     🔥 N8N
   </a>
@@ -78,40 +112,6 @@ Rest AI Projects You can Find below
 </div>
 
 <a href="https://github.com/noobhacker02/N8N" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
-  View Project →
-</a>
-
-</div>
-</div>
-
-
-<div align="center" style="margin: 20px 0;">
-<div style="display: inline-block; width: 100%; max-width: 800px; padding: 24px; border: 2px solid #30363d; border-radius: 16px; background: linear-gradient(145deg, #0d1117 0%, #161b22 100%); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); text-align: center;">
-
-<h3 style="margin: 0 0 16px 0;">
-  <a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="color: #ff6b35; text-decoration: none; font-size: 1.4em;">
-    🔥 Audio-Cleaner-for-After-Effects
-  </a>
-</h3>
-
-<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects">
-  <img src="https://opengraph.githubassets.com/1/noobhacker02/Audio-Cleaner-for-After-Effects" alt="Audio-Cleaner-for-After-Effects" width="100%" style="border-radius: 12px; margin: 16px 0; border: 1px solid #30363d; max-width: 100%; height: auto;">
-</a>
-
-<div style="margin: 16px 0;">
-  <img src="https://img.shields.io/badge/showcase-ff6b35?style=for-the-badge&logo=github&logoColor=white" alt="showcase">
-</div>
-
-<p style="color: #c9d1d9; font-size: 15px; line-height: 1.6; margin: 20px 0; text-align: left;">
-  🎧 Audio Cleaner for Adobe After Effects A customizable silence remover script panel made for editors, voice-over artists, and anyone tired of trimming quiet parts manually.
-</p>
-
-<div style="margin: 20px 0;">
-  <img src="https://img.shields.io/badge/⭐_1-ffa500?style=flat-square&labelColor=0d1117" alt="stars">
-  <img src="https://img.shields.io/badge/⚡_JavaScript-ff6b35?style=flat-square&labelColor=0d1117" alt="language">
-</div>
-
-<a href="https://github.com/noobhacker02/Audio-Cleaner-for-After-Effects" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%); color: white; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);">
   View Project →
 </a>
 
